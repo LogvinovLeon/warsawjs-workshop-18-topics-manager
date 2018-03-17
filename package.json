@@ -1,0 +1,27 @@
+{
+    "name": "warsawjs-workshop",
+    "version": "0.0.1",
+    "main": "index.js",
+    "repository": "git@github.com:LogvinovLeon/warsawjs-workshop-18-topics-manager.git",
+    "author": "Leonid Logvinov <logvinov.leon@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "build": "parcel build index.html --no-cache --public-url ./",
+        "deploy": "yarn build && gh-pages -d dist",
+        "dev": "parcel index.html --open"
+    },
+    "private": false,
+    "dependencies": {
+        "babel-polyfill": "^6.26.0",
+        "bulma": "^0.6.2",
+        "firebase": "^4.11.0",
+        "parcel-bundler": "^1.6.2",
+        "prop-types": "^15.6.1",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0"
+    },
+    "devDependencies": {
+        "gh-pages": "^1.1.0",
+        "node-sass": "^4.7.2"
+    }
+}
